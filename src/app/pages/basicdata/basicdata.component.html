@@ -1,0 +1,60 @@
+<div class="center" [formGroup]="validateForm">
+  <h1>Actualizar datos </h1><br><br>
+  <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="por favor ingresar el nombre!">
+        <nz-input-group nzPrefixIcon="user">
+          <input type="text" nz-input formControlName="name" placeholder="Nombre" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="por favor ingresar una dirección!">
+        <nz-input-group nzPrefixIcon="user">
+          <input type="text" nz-input formControlName="address" placeholder="Dirección" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="por favor ingresar fecha de nacimiento!">
+        <nz-input-group nzPrefixIcon="user">
+          <input type="text" nz-input formControlName="birthdate" placeholder="Fecha nacimiento año-mes-dia" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="por favor ingresar ciudad de residencia!">
+        <nz-input-group nzPrefixIcon="user">
+          <input type="text" nz-input formControlName="city" placeholder="Ciudad" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="por favor ingresar un correo electrónico valido!">
+        <nz-input-group nzPrefixIcon="user">
+          <input type="text" nz-input formControlName="email" placeholder="Correo electronnico" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+
+
+    <nz-form-item>
+      <nz-form-control nzErrorTip="por favor ingresar una contraseña!">
+        <nz-input-group nzPrefixIcon="lock">
+          <input type="password" nz-input formControlName="password" placeholder="Contraseña" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Aceptar</button>
+
+  </form>
+</div>
